@@ -14,7 +14,7 @@ namespace BlazorShoppingCarts.Server.Controllers
     public class ShoppingDetailsController : ControllerBase
     {
         ShoppingDBContext _context = new ShoppingDBContext();
-            
+                
 
 
         // GET: api/ShoppingDetails
