@@ -10,7 +10,7 @@ using BlazorShoppingCarts.Shared.Models;
 namespace BlazorShoppingCarts.Server.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
+    [ApiController]  
     public class ItemDetailsController : ControllerBase
     {
         ShoppingDBContext _context = new ShoppingDBContext();
@@ -92,7 +92,7 @@ namespace BlazorShoppingCarts.Server.Controllers
         }
 
         // DELETE: api/ItemDetails/5
-        [HttpDelete("{id}")]
+        [HttpDelete("{id}")]   
         public async Task<IActionResult> DeleteItemDetails([FromRoute] int id)
         {
             if (!ModelState.IsValid)
